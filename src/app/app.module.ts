@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DronKompComponent } from './dron-komp/dron-komp.component';
-
+import {StandaloneKompComponent} from './standalone-komp/standalone-komp.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +12,8 @@ import { DronKompComponent } from './dron-komp/dron-komp.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StandaloneKompComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
