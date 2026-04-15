@@ -1,0 +1,5 @@
+<h2>Moje drony:</h2>
+
+@for (name of ListaNazw; track name) {
+    <app-dron-komp [dronNazwa]="name" [licz]="$index + 1"></app-dron-komp>
+}
