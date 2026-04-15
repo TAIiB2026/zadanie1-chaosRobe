@@ -1,6 +1,15 @@
 <div class="dron-nz">
-    <p>Dron: {{ licz }}</p>
-    <p>Nazwa drona: {{ dronNazwa }}</p>
+    <!--<p>Dron: {{ licz }}</p>-->
+    <p>Nazwa drona: </p>
+    <p [ngStyle]="currentStyles" (mouseover)="onMouseEntr()" (mouseleave)="onMouseL()">{{ dronNazwa }}</p>
     <p>Energia: {{energia}}</p>
     <button (click)="onEnergiaClick()">Klik</button>
-  </div>
+</div>
+    @if(energia < 15){
+        <p>Dron nalezy naladowac</p>
+    }@else if(energia < 90){
+        <p>Poziom baterii w normie</p>
+    }@else {
+        <p>Poziom baterii w pelnii naladowany</p>
+    }
+ 
